@@ -1,0 +1,102 @@
+Testing your code - what, why and how?
+========================================================
+author: Tim Taylor
+date: Friday 5th March 2020
+autosize: true
+LSHTM Software Chatter
+
+
+Plan for this session
+========================================================
+- presentation (~ 20 mins)
+- split off in to groups (~ 20 mins)
+- back together for discussion (~ 20 mins)
+- socialise
+
+
+What do we mean by testing?
+========================================================
+incremental: true
+
+- Generally we mean using code to verify that other code is working as expected.
+- Unit testing - do your functions and methods behave correctly?
+- Integration testing - do your units integrate together correctly?
+- End to end testing - does your final analytical pipeline work as expected?
+
+
+Note:
+========================================================
+incremental: true
+
+- Tests are nothing more than a comparison between an expectation you have about
+your code and the actual result you obtain. If the two match up, your test
+passes, if not, your test fails.
+- Some languages have testing functionality built in to them (e.g. Rust) others
+rely on external frameworks (e.g. R).
+- No need to use a testing framework for this but they can make your life
+easier.
+
+
+What are the benefits of testing?
+========================================================
+incremental: true
+
+- Reassurance - your code does what you think it does.
+- Robustness - allows you to catch newly introduced bugs when adding new
+features or during refactoring.
+- Code structure - encourages a more modular approach to code. Writing tests for
+smaller, well structured functions is much easier than larger ones that do a
+lot.
+- Additional documentation - a test suite can act as an accompaniment to
+documentation.
+- Maintainability - as part of a continuous integration setup you can
+easily check that your code will run with the latest version of your chosen
+language and your code dependencies.
+- Easy life - We test to make our own life (and others) easier!
+
+
+What to test?
+========================================================
+incremental: true
+
+Let's restrict ourselves to two scenarios you are most likely to encounter:
+
+1. writing functionality (e.g. libraries / packages) for others to use; and
+2. workflows (in whatever form they come) for our own analysis.
+
+
+Functionality for others (test the surface)
+========================================================
+![Image functions inside of balloons](testing-figure/baloons.png)
+
+
+Our own analysis
+========================================================
+incremental: true
+
+- If you have trust in your dependencies (why use them if not) then there is
+no need to test functions you use from those packages.
+- Complexity of your functions can be a good gauge of where to test.  However,
+even with "simple" functions, you can easily make mistakes.
+- When you think your workflow is working as desired, snapshot the end
+result to ensure future revisions to not alter this output.
+
+
+Code coverage
+========================================================
+![Unit testing cartoon](testing-figure/martin-novak-testing.png)
+
+<small>
+source: https://medium.com/front-end-weekly/making-testable-javascript-code-2a71afba5120
+</small>
+
+
+My thoughts
+========================================================
+incremental: true
+
+- You are likely already testing your code but in a less structured way.
+- Be proportional based on the project requirements.
+- Testing has saved me so much time and caught many, many errors I've made.
+- Hugely beneficial for my own packages and when contributing to others.
+- Not a panacea.
