@@ -10,10 +10,10 @@ See also [discussion topics and meeting schedule](https://docs.google.com/spread
 
 
 ## Past talks
-| Date | Lead | Topic | Links |
+| Date | Lead(s) | Topic | Link |
 | --- | --- | --- | --- |
-| 2021-03-05 | Tim Taylor  | Testing  | [presentation](presentations/20210305), [discussion notes](https://docs.google.com/document/d/1g10CrYhLTQnfRjH4bwUeEboDO_dkTym597FYoYf_TWg/edit?usp=sharing) |
-| 2021-02-19 | Sam Abbott  | Collaborative coding in academia  | [presentation](https://docs.google.com/presentation/d/1TrXRsVyzGy5zzrcHmKba3ibShVJc4frmu91Qing7Zr8/edit?usp=sharing), [discussion notes](https://docs.google.com/document/d/1rON6UES8hcALLDdqJfiC6UyFOxlvS-HeSCk6TR5TJdg/edit?usp=sharing) |
+| 2021-03-05 | Tim Taylor  | Testing  | [presentation and discussion](sessions/20210305/README.md)) |
+| 2021-02-19 | Sam Abbott and Naomi Waterlow | Collaborative coding in academia  | [presentation and discussion](sessions/20210219/README.md)) | 
 
 ## Additional Resources
 * One of the things that came up in our first session and later on in the social
